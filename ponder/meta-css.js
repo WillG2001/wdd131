@@ -38,4 +38,8 @@ selectElem.addEventListener('change', function(){
     console.log(codeValue);
     document.getElementById(codeValue).style.color = 'red';
 })
+
+const image = document.querySelector
+image.setAttribute('src', 'images/html_css_js.jpg')
+image.setAttribute('alt', 'new logo with black background')
                 
