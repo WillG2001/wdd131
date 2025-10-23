@@ -55,10 +55,15 @@ footer {
     grid-template-columns: 75% 25%;
 }
 
+.articles {
+    padding: 45px;
+}
+
 .book {
     display: grid;
     grid-template-columns: 33% 67%;
     margin: 10px;
+    padding: 30px;
 }
 
 .details {
@@ -66,7 +71,7 @@ footer {
     line-height: 0.8;
     text-align: right;
     padding-right: 20px;
-    margin: 30px;
+    margin: 10px;
 }
 
 .book-description {
@@ -83,12 +88,14 @@ footer {
         grid-template-rows: 33% 67%;
         grid-template-columns: none;
         margin: 20px;
+        padding-left: 50px;
     }
 
     .book-description {
         margin-top: 10px;
         margin-bottom: 50px;
         justify-content: center;
+        padding-left: 50px;
     }
 
     .details {
