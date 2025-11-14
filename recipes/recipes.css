@@ -1,0 +1,151 @@
+h1,
+h2 {
+    font-family: 'Amatic SC', cursive;
+}
+
+h1 {
+    font-size: 80px;
+}
+
+h2 {
+    color: #72acd4;
+    font-size: 35px;
+}
+
+img {
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+.titleArea img {
+    width: 125px;
+    padding: 10px;
+}
+
+.searchBar img {
+    width: 20px;
+}
+
+.recipe img {
+    width: 400px;
+}
+
+.social img {
+    width: 40px;
+    padding: 3px;
+}
+
+.titleArea {
+    display: flex;
+    justify-content: center;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.searchBar input {
+    width: 100%;
+    padding: 15px 45px 15px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    font-size: 18px;
+    outline: none;
+}
+
+.searchBar .searchIcon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    opacity: 0.6;
+    border-left: 2px solid #ccc;
+    padding-left: 10px;
+}
+
+.recipe {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    box-sizing: border-box;
+}
+
+.recipe img {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.recipeDesc {
+    display: none;
+}
+
+hr {
+    width: 90%;
+    max-width: 900px;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+p,
+a {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.iconLink {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #e5e5e5;
+    border: 1px solid #999;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+@media (min-width: 800px) {
+    .recipe {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        width: 80%;
+        margin: 20px auto;
+        gap: 20px;
+    }
+
+    .recipeDesc {
+        display: block;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    footer .social {
+        display: flex;
+        gap: 10px;
+    }
+}
