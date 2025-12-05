@@ -1,0 +1,131 @@
+:root {
+    --primary-color: #683b9b;
+    --secondary-color: #6CAAF9;
+    --accent1-color: #2C28B0;
+    --accent2-color: #E2BBED;
+
+    --heading-font: "Rockwell";
+    --paragraph-font: "Segoe UI";
+
+    --headline-color-on-white: var(--primary-color);
+    /* headlines on a white background */
+    --headline-color-on-color: var(--accent2-color);
+    /* headlines on a colored background */
+    --paragraph-color-on-white: var(--primary-color);
+    /* paragraph text on a white background */
+    --paragraph-color-on-color: white;
+    /* paragraph text on a colored background */
+    --paragraph-background-color: var(--primary-color);
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--primary-color);
+}
+
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+.reviewImg {
+    max-height: 300px;
+    max-width: 300px;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-white);
+}
+
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: var(--headline-color-on-color);
+    text-align: center;
+    padding: 20px;
+}
+
+hr {
+    height: 3px;
+    margin: 35px 0;
+    background: var(--accent1-color);
+}
+
+nav {
+    font-family: var(--paragraph-font);
+    line-height: 3em;
+    text-align: left;
+    font-size: 1.2em;
+}
+
+#navbar {
+    background-color: var(--nav-background-color);
+    border: 5px solid var(--accent2-color);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 25px;
+}
+
+.searchBar {
+    margin-left: auto;
+}
+
+p {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color);
+    padding: 1em;
+}
+
+select,
+input,
+button {
+    font-family: var(--paragraph-font);
+}
+
+button {
+    background-color: white;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+}
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.review {
+    background-color: var(--paragraph-background-color);
+    color: var(--paragraph-color-on-color);
+    border: 5px solid var(--secondary-color);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 25px;
+}
+
+footer {
+    font-family: var(--paragraph-font);
+    text-align: center;
+}
+
+@media (min-width: 800px) {
+    .review {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        margin: 20px auto;
+        gap: 20px;
+    }
+}
