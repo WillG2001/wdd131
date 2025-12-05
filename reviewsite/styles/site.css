@@ -79,10 +79,15 @@ nav {
     margin-left: auto;
 }
 
-p {
+p,
+label {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color);
     padding: 1em;
+}
+
+a {
+    color: white;
 }
 
 select,
